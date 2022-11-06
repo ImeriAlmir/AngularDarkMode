@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+.light {
+    color: black;
+    background-color: white;
+    transition: 0.45s;
+}
+
+.dark {
+    color: white;
+    background-color: black;
+    transition: 0.45s;
+}
