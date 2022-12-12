@@ -8,7 +8,7 @@ import { DarkModeService } from './darkModeService/dark-mode.service';
 })
 export class AppComponent {
 
-    constructor(public darkModeService: DarkModeService){
+    constructor(public darkModeService: DarkModeService) {
 
     }
 }

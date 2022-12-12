@@ -10,17 +10,17 @@ export class DarkModeService {
 
     constructor() {
         this.darkModeState.subscribe((state: boolean) => {
-            if(state){
+            if (state) {
                 this.setDarkMode();
-            }else {
+            } else {
                 this.setLightMode();
             }
-        })
+        });
     }
 
     public toggleDarkMode = (): void => {
         this.darkModeState.next(!this.darkModeState.getValue());
-    }
+    };
 
     private checkIfDarkModeIsUsed(): boolean {
         const matchMedia = window.matchMedia('(prefers-color-scheme: dark)').matches;
